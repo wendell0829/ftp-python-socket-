@@ -1,0 +1,36 @@
+'''
+该项目为一个ftp简单模型, 包括客户端与服务端两部份, 可以实现注册\登录\上传\下载\切换目录等功能, 目前只能实现一对一连接(单进程)
+'''
+
+'''
+已实现:
+1. 登录验证(基于mysql数据库)
+2. cd 切换目录
+3. upload 上传文件
+4. download 下载文件
+5. ls 显示当前目录文件与文件夹
+'''
+
+'''
+开发环境：
+win10 家庭版
+python 3.7
+mysql 8.0
+依赖包见requirements
+'''
+
+'''
+目录结构：
+client： 客户端
+    files：本地文件夹
+    client_socket.py: 核心类
+    main.py: 程序入口
+
+server: 服务端
+    core:
+        database: 数据库相关
+        server_socket.py: 核心类
+        utils.py: 工具函数
+    files: 服务端文件夹
+        wendell: 用户文件夹, 注册时创建
+'''
